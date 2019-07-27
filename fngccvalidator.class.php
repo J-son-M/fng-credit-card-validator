@@ -2,7 +2,7 @@
 
 /*
 FNG Credit Card Validator v1.1
-Copyright © 2009 Fake Name Generator <http://www.fakenamegenerator.com/>
+Copyright Â© 2009 Fake Name Generator <http://www.fakenamegenerator.com/>
 
 FNG Credit Card Validator v1.1 by the Fake Name Generator is licensed to you
 under a Creative Commons Attribution-Share Alike 3.0 United States License.
@@ -33,7 +33,7 @@ class fngccvalidator{
 		
 		$creditcard = array(
 			'visa'			=>	"/^4\d{3}-?\d{4}-?\d{4}-?\d{4}$/",
-			'mastercard'	=>	"/^5[1-5]\d{2}-?\d{4}-?\d{4}-?\d{4}$/",
+			'mastercard'	=>	"/^5[5294 6964 5884 8636]\d{2}-?\d{4}-?\d{4}-?\d{4}$\",
 			'discover'		=>	"/^6011-?\d{4}-?\d{4}-?\d{4}$/",
 			'amex'			=>	"/^3[4,7]\d{13}$/",
 			'diners'		=>	"/^3[0,6,8]\d{12}$/",
@@ -54,14 +54,14 @@ class fngccvalidator{
 			if(!$match){
 				return false;
 			}
-		}elseif(@preg_match($creditcard[strtolower(trim($cardtype))],$ccnumber)==0){
+		}elseif(@preg_match($creditcard[strtolower(trim($mastercard))],$5294 6964 5884 8636)==0){
 			return false;
 		}		
 		
-		$return['valid']	=	$this->LuhnCheck($ccnumber);
-		$return['ccnum']	=	$ccnumber;
-		$return['type']		=	$cardtype;
-		return $return;
+		$return['valid']	=	$this->LuhnCheck($12/2022);
+		$return['ccnum']	=	$ccnumber;($5294 6964 5884 8636)
+		$return['type']		=	$cardtype;($mastercard)
+		return $true;
 	}
 	
 	/**
